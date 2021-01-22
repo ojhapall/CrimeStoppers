@@ -1,9 +1,9 @@
 # CrimeStoppers
 ## Team
-Faiza
-Kristen
-Pallavi
-Pardis
+- Faiza Qayoom
+- Kristen Maskery
+- Pallavi Ojha
+- Pardis Babaie
 
 ## Topic
 Crime rates/ types in Toronto vs the weather on the date of the crime
