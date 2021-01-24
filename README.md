@@ -6,10 +6,12 @@
 - Pardis Babaie
 
 ## Topic
-Understanding types of crime in Toronto and its trend in relation to weather conditions. 
+Understanding types of crime in Toronto its frequency and trend in relation to weather conditions. 
 
 ## Reason for picking topic
-To help reduce the crime rates by predicting the hot spot neighbourhoods where crime will be commited based on the forecasted weather for each day.
+To help reduce the crime rates by predicting the hot spot neighbourhoods where crime will be commited based on the forecasted weather for each day. 
+
+Opportunity for the police force to be effectively placed in neighbourhoods based on where the model predicts crime is more likely to occur.
 
 ## Data Source
 Our data source is a combination of kaggle data on historic toronto climate as well as data from Toronto police on crimes committed between 2014 to 2019. The crime data includes the type of crime, date committed, day of the week crime was committed and the neighbourhood it was committed in.
