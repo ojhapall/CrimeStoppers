@@ -23,6 +23,7 @@ Our data source is a combination of kaggle data on historic toronto climate as w
 - Are there more crimes committed when the weather is warmer?
 - Are there specific neighbourhoods that there is a higher crime rate depending on the weather being warmer?
 - Is there a day of the week that there are more crimes committed?
+- Is there a day of the week when crime severity is greater?
 - Is there a specific season that more crimes are commited?
 - Do the type of crimes differ depending on the weather and season?
 
