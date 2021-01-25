@@ -1,8 +1,11 @@
 # CrimeStoppers
 ## Team
 Faiza Qayoom
+
 Kristen Maskery
+
 Pallavi Ojha
+
 Pardis Babaie
 
 ## Topic
