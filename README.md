@@ -34,4 +34,3 @@ We created a slack group with all 4 members as well as a google docs group to tr
 ## Initial Model Overview
 We are using a supervised learning model as we are analysing labelled data. For this model we will be using a linear regression model as we are predicting continuous variables. The regression model’s algorithm would attempt to learn patterns that exist among mean temperature and crime rate by day. When presented with future data we would use this model to predict the crime rate when presented with a temperature based on previously learned patterns from the dataset. From the initial results of the model we may have to pivot and use an alternate machine learning model or build upon our current model to increase accuracy. 
 
-# Segment 2
