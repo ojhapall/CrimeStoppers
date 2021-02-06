@@ -19,6 +19,10 @@ Our data source is a combination of kaggle data on historic toronto climate as w
 - https://www.kaggle.com/rainbowgirl/climate-data-toronto-19372018?select=Toronto_temp.csv
 - https://data.torontopolice.on.ca/datasets/mci-2014-to-2019?geometry=-80.370%2C43.545%2C-78.392%2C43.893&selectedAttribute=occurrencemonth
 
+### ERD
+
+<img width="456" alt="Screen Shot 2021-02-06 at 12 39 25 PM" src="https://user-images.githubusercontent.com/69806770/107126355-61721800-687d-11eb-8509-49712a71450c.png">
+
 ## Questions we would like to answer
 - Are there more crimes committed when the weather is warmer?
 - Are there specific neighbourhoods that there is a higher crime rate depending on the weather being warmer?
@@ -32,5 +36,4 @@ Our data source is a combination of kaggle data on historic toronto climate as w
 We created a slack group with all 4 members as well as a google docs group to track our progress. We determined all roles and provided timelines of when each role should be done with their tasks so the remaining members can complete their tasks for the week.
 
 ## Initial Model Overview
-We are using a supervised learning model as we are analysing labelled data. For this model we will be using a linear regression model as we are predicting continuous variables. The regression model’s algorithm would attempt to learn patterns that exist among mean temperature and crime rate by day. When presented with future data we would use this model to predict the crime rate when presented with a temperature based on previously learned patterns from the dataset. From the initial results of the model we may have to pivot and use an alternate machine learning model or build upon our current model to increase accuracy. 
 
