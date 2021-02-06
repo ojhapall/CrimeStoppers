@@ -19,6 +19,10 @@ Our data source is a combination of kaggle data on historic toronto climate as w
 - https://www.kaggle.com/rainbowgirl/climate-data-toronto-19372018?select=Toronto_temp.csv
 - https://data.torontopolice.on.ca/datasets/mci-2014-to-2019?geometry=-80.370%2C43.545%2C-78.392%2C43.893&selectedAttribute=occurrencemonth
 
+### ERD
+
+<img width="456" alt="Screen Shot 2021-02-06 at 12 39 25 PM" src="https://user-images.githubusercontent.com/69806770/107126355-61721800-687d-11eb-8509-49712a71450c.png">
+
 ## Questions we would like to answer
 - Are there more crimes committed when the weather is warmer?
 - Are there specific neighbourhoods that there is a higher crime rate depending on the weather being warmer?
