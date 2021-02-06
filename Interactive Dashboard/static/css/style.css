@@ -1,0 +1,10 @@
+body {
+
+    color: #CFDBDB;
+  }
+
+.jumbotron {
+    background-image: url("../images/CrimeScene.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+}

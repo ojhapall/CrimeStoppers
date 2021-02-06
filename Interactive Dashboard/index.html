@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Stoppers</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-dark">
+    <div class = "wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Crime Stoppers</a>
+        </nav>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Telling You Safest Place to Be</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Do higher temperatures result in more crime? <small>Data scientists weigh in</small></h3>
+          </div>
+          <div class="col-md-8">
+            <p>
+             TBD
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="bg-dark">
+                    <p>Filter Search</p>
+                    <ul class="list-group">
+                        <li class = "bg-dark" >
+                            <label for="date">Enter Day of Week</label>
+                            <input type="text" placeholder="Monday" id="datetime"/>
+                        </li>
+                        <li class = "bg-dark" >
+                            <label for="date">Enter Month</label>
+                            <input type="text" placeholder="1-12" id="city"/>
+                        </li>
+                        <li class = "bg-dark" >
+                            <label for="date">Enter Hour of Day (24hr)</label>
+                            <input type="text" placeholder="1-24" id="state"/>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>
+                        <th>Date</th>
+                        <th>Day of Week</th>
+                        <th>Hour of Day</th>
+                        <th>Type of Crime</th>
+                        <th>Latitude</th>
+                        <th>Longtitude</th>
+                        <th>Mean Temperature</th>
+                        <th>Total Precipitation</th>
+                        <th>Season</th>
+                        <th>Rain</th>
+                        <th>Snow</th>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
