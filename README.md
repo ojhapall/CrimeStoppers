@@ -36,4 +36,4 @@ Our data source is a combination of kaggle data on historic toronto climate as w
 We created a slack group with all 4 members as well as a google docs group to track our progress. We determined all roles and provided timelines of when each role should be done with their tasks so the remaining members can complete their tasks for the week.
 
 ## Initial Model Overview
-We are using a supervised learning model as we are analysing labelled data. For this model we will be using a linear regression model as we are predicting continuous variables. The regression model’s algorithm would attempt to learn patterns that exist among mean temperature and crime rate by day. When presented with future data we would use this model to predict the crime rate when presented with a temperature based on previously learned patterns from the dataset. 
+
