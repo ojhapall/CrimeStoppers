@@ -11,33 +11,103 @@
 </head>
 
 <body class="bg-dark">
-  <div class = "wrapper">
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-          <a class="navbar-brand" href="index.html">Crime Stoppers</a>
-      </nav>
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">Crime Stoppers</a>
+    </nav>
   </div>
   <div class="jumbotron">
-      <h1 class="display-4">Telling You Safest Place to Be</h1>
+    <h1 class="display-4">Telling You Safest Place to Be</h1>
   </div>
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Do higher temperatures result in more crime?</h3>
+      </div>
+      <div class="col-md-8">
+        <p>
+          Looking at weather and crime in the Toronto Region, we are able to see that crime is affected by many factors
+          including the temperature, season and day of the week. Using these metrics, the police force can use this tool
+          to determine the crime hot spots and crime types.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Initial Analysis </h3>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img src="static/images/HourlyCrime.jpeg">
+    <img src="static/images/MonthlyCrime.jpeg">
+    <img src="static/images/TemperatureCrime.jpeg">
+    <img src="static/images/WeeklyCrime.jpeg">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Initial Machine Learning Analysis: Linear Regression Model</h3>
+      </div>
+      <div class="col-md-8">
+        <p>
+          We are using a supervised learning model as we are analysing labelled data. We have tested various different
+          machine learning models to determine what the best fit would be. We began with a linear regression model. The
+          regression model’s algorithm would attempt to learn patterns that exist among mean temperature, day of the
+          week, hour of the day, season and crime rate. We would use this model to predict the crime rate when presented
+          with a temperature based on previously learned patterns from the dataset. This model was successful but we
+          wanted to test and see if there would be a better result with another model. We then tested a Random Forest
+          Classifier which was not successful.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h4>Correlation</h4>
+    </div>
+    <div>
+      <div class="row">
+        <img src="static/images/Correlation_Hour.png">
+        <img src="static/images/Correlation_Month.png">
+        <img src="static/images/Correlation_Temp.png">
+        <img src="static/images/Correlation_Weekday.png">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h4>Predictions</h4>
+    </div>
+    <div>
+      <div class="row">
+        <img src="static/images/Predictions_Hour.png">
+        <img src="static/images/Predictions_Month.png">
+        <img src="static/images/Predictions_Temp.png">
+        <img src="static/images/Prediction_Weekday.png">
+      </div>
+    </div>
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4">
-          <h3>Do higher temperatures result in more crime?</h3>
+          <h3>Final Machine Learning Analysis: Facebook Prophet</h3>
         </div>
         <div class="col-md-8">
           <p>
-            Looking at weather and crime in the Toronto Region, we are able to see that crime is affected by many factors including the temperature, season and day of the week. Using these metrics, the police force can use this tool to determine the crime hot spots and crime types.
+            This model is used for time series forecasting and we used it to see if based on the date information of the
+            crimes committed we could forecast the crime rates for the coming years. This model was very successful and
+            is the model we chose as our final model.
           </p>
         </div>
       </div>
-  </div>
-  <div>
-      <img src="static/images/HourlyCrime.jpeg">
-      <img src="static/images/MonthlyCrime.jpeg">
-      <img src="static/images/TemperatureCrime.jpeg">
-      <img src="static/images/WeeklyCrime.jpeg">
-  </div>
-  <div class="container-fluid">
+      <div>
+        <div class="row">
+          <img src="static/images/ML_FBP_Forecast.png">
+          <img src="static/images/ML_FBP_ForecaseComponents.png">
+          <img src="static/images/ML_FBP_Model.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
       <div class="row">
           <div class="col-md-3">
               <form class="bg-dark">
@@ -86,7 +156,8 @@
           </div>
       </div>
   </div>
-<script src = "static/csv/merged_df.csv"></script>
-<script src = "static/js/app.js"></script>
+    <script src="static/csv/merged_df.csv"></script>
+    <script src="static/js/app.js"></script>
 </body>
+
 </html>
