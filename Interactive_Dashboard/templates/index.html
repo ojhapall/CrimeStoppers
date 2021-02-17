@@ -71,12 +71,31 @@
   </div>
   <div class="col-md-8">
     <p>
-      This model is used for time series forecasting and we used it to see if based on the date information of the crimes committed we could forecast the crime rates for the coming years. This model was very successful and is the model we chose as our final model.
+      This model is used for time series forecasting and we used it to see if based on the date information of the 
+      crimes committed we could forecast the crime rates for the coming years. This model was very successful and 
+      is the model we chose as our final model.
     </p>
   </div>
   <div>
     <img src="static/images/ML_FBP_Prediction2024.png">
   </div>
+  <form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+      <legend>Input Values:</legend>
+      Date:
+      <input name="date" type=datetime required>
+    </fieldset>
+  </form>
+  <div class="result" align="center">
+    {% if result %}
+        {% for variable, value in original_input.items() %}
+            <b>{{ variable }}</b> : {{ value }}
+        {% endfor %}
+        <br>
+        <br> Predicted number of bikes in use:
+           <p style="font-size:50px">{{ result }}</p>
+    {% endif %}
+</div>
 </body>
 
 </html>
