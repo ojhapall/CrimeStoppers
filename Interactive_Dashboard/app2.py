@@ -15,7 +15,7 @@ with open(file, 'rb') as handle:
 
 app = Flask(__name__,template_folder='templates')
 
-@app.route('/predict/')
+@app.route('/predict/') # Use URL http://localhost:5000/predict/?date=2020-01-01 to access html after starting server.
 #@app.route('/predict/<date>')
 def hello():
     date = request.args.get("date")
