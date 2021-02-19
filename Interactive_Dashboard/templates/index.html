@@ -7,7 +7,7 @@
   <title>Crime Stoppers</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 </head>
 
 <body class="bg-dark">
@@ -38,10 +38,10 @@
       <h3>Initial Analysis</h3>
     </div>
     <div>
-      <img src="static/images/HourlyCrime.jpeg">
-      <img src="static/images/MonthlyCrime.jpeg">
-      <img src="static/images/TemperatureCrime.jpeg">
-      <img src="static/images/WeeklyCrime.jpeg">
+      <img src="/static/images/HourlyCrime.jpeg">
+      <img src="/static/images/MonthlyCrime.jpeg">
+      <img src="/static/images/TemperatureCrime.jpeg">
+      <img src="/static/images/WeeklyCrime.jpeg">
     </div>
   </div>
   <div>
@@ -61,41 +61,35 @@
     </div>
   </div>
   <div>
-    <img src="static/images/ML_PredictionsHour.jpeg">
-    <img src="static/images/ML_PredictionsMONTH.jpeg">
-    <img src="static/images/ML_PredictionsTEMP.jpeg">
-    <img src="static/images/ML_PredictionsWeekday.jpeg">
+    <img src="/static/images/ML_PredictionsHour.jpeg">
+    <img src="/static/images/ML_PredictionsMONTH.jpeg">
+    <img src="/static/images/ML_PredictionsTEMP.jpeg">
+    <img src="/static/images/ML_PredictionsWeekday.jpeg">
   </div>
   <div class="col-md-4">
     <h3>Machine Learning Analysis: Facebook Prophet</h3>
   </div>
   <div class="col-md-8">
     <p>
-      This model is used for time series forecasting and we used it to see if based on the date information of the 
-      crimes committed we could forecast the crime rates for the coming years. This model was very successful and 
+      This model is used for time series forecasting and we used it to see if based on the date information of the
+      crimes committed we could forecast the crime rates for the coming years. This model was very successful and
       is the model we chose as our final model.
     </p>
   </div>
   <div>
-    <img src="static/images/ML_FBP_Prediction2024.png">
+    <img src="/static/images/ML_FBP_Prediction2024.png">
   </div>
-  <form action="{{ url_for('main') }}" method="POST">
+  <form action="http://localhost:5000/predict/" method="GET">
     <fieldset>
       <legend>Input Values:</legend>
       Date:
-      <input name="date" type=datetime required>
+      <input name="date" type="text" required>
+      <button type="submit">Submit</button>
     </fieldset>
   </form>
-  <div class="result" align="center">
-    {% if result %}
-        {% for variable, value in original_input.items() %}
-            <b>{{ variable }}</b> : {{ value }}
-        {% endfor %}
-        <br>
-        <br> Predicted number of bikes in use:
-           <p style="font-size:50px">{{ result }}</p>
-    {% endif %}
-</div>
+  <div>
+    <h3>The crime rate is {{date}}.</h3>
+  </div>
 </body>
 
 </html>

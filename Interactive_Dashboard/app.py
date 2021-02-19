@@ -1,29 +1,36 @@
-import flask
+from flask import Flask, render_template, redirect, url_for, request
 import pickle
+import os
+import pandas as pd
+from dateutil import parser
+from fbprophet import Prophet
 
-with open(f'Model/Machine_Learning_Model_FINAL.obj') as f:
-    model = pickle.load(f)
+file = ('/Users/pallaviojha/CrimeStoppers/Interactive_Dashboard/model.pkl')
 
-app = flask.Flask(__name__,template_folder='templates')
+with open(file, 'rb') as handle:
+    model = pickle.load(handle)
 
-@app.route("/", methods=['GET','POST'])
-def main():
-    if flask.request.method == 'GET':
-        return (flask.render_template("index.html"))
+app = Flask(__name__,template_folder='templates')
+
+
+
+@app.route("/", methods=['GET'])
+def results():
+    date = request.form['ds']
+
+        # get_date = parser.parse(request.form.get('Date'))
+
+        # return (render_template("index.html"))
     
-    if flask.request.method == 'POST':
-        date = flask.request.form['ds']
-    
-        input_variables =  pd.DataFrame(temp_binary_encoded_df.date_.value_counts().reset_index().values, columns=["ds", "y"])
+    if request.method == 'GET':
+        # model = get_model()
 
-        prediction = model.predict(input_variables)[0]
+        prediction = model.predict('2020-01-01')
 
-        return flask.render_template('index.html', 
+        return render_template('index.html', 
             original_input={'Date':date},
             results = prediction,
             )
-
-
 
 if __name__ == "__main__":
     app.run()
