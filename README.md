@@ -65,5 +65,3 @@ After conducting further research on other potential machine learning models, we
   a.	Figure 1. Exemplifies the relationship between the actual and predicted crime rate beginning in 2014 and ending in 2023. 
   b.	Figure 2. Shows three different linear plots. The first illustrates the predicted trend of the crime rate; the model predicts a significant increase in the     trend of crime rate over the next five years. The second plot reinforces the historical trend that the future predicted crime rate will increase significantly       from Friday to Sunday during the week. The last plot in figure 2 shows the relationship between the forecasted crime rate and month- similar to the historical       data trends the months that will experience the highest crime rates vary from May to November. 
   c.	The graph generated using plotly, plots the predicted versus the actual historical data. From the graph we are able to determine that the crime rate will       continue to steadily increase from 2018 to 2023. 
-
-
